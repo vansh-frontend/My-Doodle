@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Custom Google-style search page" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="shortcut icon" href="img/chrome.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+
+  <title>Doodle - Search</title>
+</head>
+<body>
+  <header class="top-nav">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="https://mail.google.com/" title="Gmail">Gmail</a></li>
+        <li><a href="https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl" title="Images">Images</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="logo-container">
+      <a href="https://www.google.com/" target="_self" aria-label="Google Homepage">
+        <img src="img/google.png" alt="Google Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="search-container">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search Google or type a URL"
+          title="Search here"
+          autocomplete="off"
+          aria-label="Search"
+        />
+        <div class="icon-container">
+          <button class="icon-btn" id="micBtn" aria-label="Voice search" title="Voice search">
+            <img src="img/mic.png" alt="Microphone" />
+          </button>
+          <button class="icon-btn" id="lensBtn" aria-label="Search by image" title="Search by image">
+            <img src="img/lens.png" alt="Google Lens" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
