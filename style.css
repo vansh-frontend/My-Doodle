@@ -101,6 +101,43 @@ body::after {
   box-shadow: 0 0 0 8px rgba(60, 64, 67, 0.06);
 }
 
+/* icons */
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons a {
+  color: #333;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.icons a:hover {
+  color: #0077b5; /* Change as needed */
+  transform: translateY(-5px) scale(1.1);
+}
+
+.icons a:first-child:hover {
+  color: #000; /* GitHub */
+}
+
+.icons a:nth-child(2):hover {
+  color: #0A66C2; /* LinkedIn */
+}
+
+.icons a:nth-child(3):hover {
+  color: #EA4335; /* Email */
+}
+
+.icons a:nth-child(4):hover {
+  color: #000; /* X/Twitter */
+}
+
 /* main */
 
 .main-content {
@@ -160,7 +197,7 @@ body::after {
   height: 50px;
   border: 1px solid #e3e6ee;
   border-radius: 26px;
-  padding: 0 118px 0 52px;
+  padding:0 80px 0 52px;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
